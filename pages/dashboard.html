@@ -2,10 +2,76 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>Dashboard CAIS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - CAIS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+            margin: 0;
+        }
+
+        header {
+            background: #1e40af;
+            color: white;
+            padding: 20px;
+        }
+
+        main {
+            padding: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px #ddd;
+        }
+
+        a, button {
+            display: inline-block;
+            padding: 10px 15px;
+            margin: 5px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Dashboard Akademik</h1>
-    <p>Selamat datang di sistem informasi akademik.</p>
+
+    <header>
+        <h1>Dashboard CAIS</h1>
+        <p>Collaborative Academic Information System</p>
+    </header>
+
+    <main>
+        <h2>Selamat Datang!</h2>
+        <p>Anda berhasil masuk ke sistem akademik.</p>
+
+        <div class="card">
+            <h3>Total Mahasiswa</h3>
+            <h1>1</h1>
+            <p>Data mahasiswa terdaftar</p>
+        </div>
+
+        <div class="card">
+            <h3>Menu Utama</h3>
+            <a href="mahasiswa.html">Data Mahasiswa</a>
+        </div>
+
+        <button onclick="logout()">Logout</button>
+    </main>
+
+    <script>
+        function logout() {
+            window.location.href = "login.html";
+        }
+    </script>
+
 </body>
 </html>

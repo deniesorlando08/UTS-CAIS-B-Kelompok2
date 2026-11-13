@@ -1,11 +1,52 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>Data Mahasiswa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Mahasiswa - CAIS</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <h1>Modul Data Mahasiswa</h1>
-    <p>Halaman pengelolaan data mahasiswa CAIS.</p>
+
+    <header>
+        <h1>Data Mahasiswa</h1>
+        <p>Collaborative Academic Information System</p>
+    </header>
+
+    <main>
+        <h2>Daftar Mahasiswa</h2>
+
+        <form id="formMahasiswa">
+            <input type="text" id="npm" placeholder="NPM" required>
+            <input type="text" id="nama" placeholder="Nama Mahasiswa" required>
+            <input type="text" id="prodi" placeholder="Program Studi" required>
+            <button type="submit">Tambah Mahasiswa</button>
+        </form>
+
+        <table border="1" cellpadding="10">
+            <thead>
+                <tr>
+                    <th>NPM</th>
+                    <th>Nama</th>
+                    <th>Program Studi</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody id="tabelMahasiswa">
+                <tr>
+                    <td>11523005</td>
+                    <td>Denies Orlando</td>
+                    <td>Sistem Informasi</td>
+                    <td>-</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br>
+        <a href="dashboard.html">Kembali ke Dashboard</a>
+    </main>
+
+    <script src="../js/script.js"></script>
 </body>
 </html>
